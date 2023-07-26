@@ -12,7 +12,12 @@ public class Main {
         // Задание 1
         BackupDir.backup("./test", "./backupTest");
         // Задание 2
-        FieldStatus fieldStatus = new FieldStatus("fieldStatus.txt");
+        FieldStatus fieldStatus = new FieldStatus();
         System.out.println(fieldStatus);
+        fieldStatus.recordFieldStatus();
+
+
+        FieldStatus fieldStatus2 = new FieldStatus("fieldStatus.txt");
+        System.out.println(fieldStatus2);
     }
 }
